@@ -1,5 +1,5 @@
 # Stage 1:
-
+FROM node:8
 COPY scr/scr
 
 WORKDIR /src
