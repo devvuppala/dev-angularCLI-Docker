@@ -1,6 +1,6 @@
 # Stage 1:
 FROM node:8 as builder
-COPY scr /scr
+COPY src /src
 
 WORKDIR /src
 
