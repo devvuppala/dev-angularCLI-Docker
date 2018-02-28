@@ -4,11 +4,14 @@ COPY src /src
 
 WORKDIR /src
 
-RUN npm install @angular/cli
+RUN npm install
+RUN $(nom bin)/ng build
 #RUN ng build
 
-RUN ng serve --port 4200
-
 # Stage 2:
+FROM nginx
 
-EXPOSE 4200
+COPY --from=builder /src/* /usr/share/nginx/html/
+
+
+EXPOSE 80
