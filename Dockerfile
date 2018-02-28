@@ -6,7 +6,7 @@ WORKDIR /src
 
 RUN npm install @angular/cli
 #RUN ng build
-RUN ng serve
+#RUN ng serve
 
 # Stage 2:
 
