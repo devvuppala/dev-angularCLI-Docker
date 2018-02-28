@@ -5,7 +5,7 @@ COPY src /src
 WORKDIR /src
 
 RUN npm install
-RUN $(nom bin)/ng build
+RUN $(npm bin)/ng build
 #RUN ng build
 
 # Stage 2:
