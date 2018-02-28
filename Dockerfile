@@ -6,8 +6,9 @@ WORKDIR /src
 
 RUN npm install @angular/cli
 #RUN ng build
-#RUN ng serve
+
+RUN ng serve --port 4200
 
 # Stage 2:
 
-EXPOSE 80
+EXPOSE 4200
