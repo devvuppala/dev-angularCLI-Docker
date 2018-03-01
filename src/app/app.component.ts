@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
+import { environment } from '../environments/environment';
 
 
 @Component({
@@ -9,5 +10,6 @@ import { ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'app';
+  title = environment.appTitle;
+  navBackGroundColor = environment.navBarcolor;
 }

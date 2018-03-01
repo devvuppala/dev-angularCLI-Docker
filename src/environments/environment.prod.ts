@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  navBarcolor:'blue',
+  appTitle: 'Angular App PROD'
 };
