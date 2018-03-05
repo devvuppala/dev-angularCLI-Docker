@@ -129,7 +129,7 @@
 #CMD ["nginx", "-g", "daemon off;"]
 
 # Pull base image.
-FROM dockerfile/nodejs
+FROM node:8
 
 # Meta
 #MAINTAINER Sebastien Dubois <seb@dsebastien.net>
