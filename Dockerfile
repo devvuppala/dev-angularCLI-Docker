@@ -110,7 +110,7 @@ Run ls
 
 
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-COPY /ng-app/dist /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 RUN echo "Copied to share"
 
